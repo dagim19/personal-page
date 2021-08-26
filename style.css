@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Rampart One", cursive;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.1em;
+  color: whitesmoke;
+}
+
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.body-container {
+  margin: auto;
+  width: 50%;
+  border-width: 0;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  transition-property: border-width;
+  transition-duration: 3s;
+}
+
+.body-container:hover {
+  border-width: 0 3px 0 3px;
+}
+
+.body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 100%;
+  height: 100%;
+  background: #0f0c29; /* fallback for old browsers */
+  background: #000000; /* fallback for old browsers */
+}
+
+.aboutMe {
+  padding: 3%;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects header {
+  margin-bottom: 10px;
+}
+
+.certs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 15px;
+  grid-template-rows: 50% 50%;
+  row-gap: 15px;
+}
+
+.cert {
+  display: block;
+  margin-bottom: 5px;
+}
+
+cert,
+cert:hover cert:focus,
+cert:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  width: 300px;
+  height: 231px;
+}
+
+.design {
+  background-image: url("/img/design.png");
+  background-repeat: no-repeat;
+}
+
+.api {
+  background-image: url("/img/api.png");
+  background-repeat: no-repeat;
+}
+
+.js {
+  background-image: url("/img/js.png");
+  background-repeat: no-repeat;
+}
+
+.lib {
+  background-image: url("/img/lib.png");
+  background-repeat: no-repeat;
+}
+
+.github {
+  text-align: center;
+}
+
+.github h3 {
+  margin-bottom: 10px;
+}
+
+/*Transition properties for the texts*/
+p {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+p:hover {
+  color: red;
+}
+
+h3 {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+h3:hover {
+  color: red;
+}
+
+h1 {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+h1:hover {
+  color: red;
+}
+
+.github-link {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.github-link:hover {
+  color: red;
+}
