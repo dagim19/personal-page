@@ -158,6 +158,10 @@ h1:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  .body-container:hover {
+    border: 0;
+  }
+
   .body-container {
     margin: auto;
     width: 100%;
@@ -255,39 +259,18 @@ h1:hover {
   }
 
   /*Transition properties for the texts*/
-  p {
-    transition-property: color;
-    transition-duration: 1s;
-  }
-
-  p:hover {
-    color: red;
-  }
-
-  h3 {
-    transition-property: color;
-    transition-duration: 1s;
-  }
-
-  h3:hover {
-    color: red;
-  }
-
-  h1 {
-    transition-property: color;
-    transition-duration: 1s;
-  }
-
-  h1:hover {
-    color: red;
-  }
-
+  p,
+  h3,
+  h1,
   .github-link {
-    transition-property: color;
-    transition-duration: 1s;
+    transition-property: none;
+    transition-duration: 0;
   }
 
+  p:hover,
+  h3:hover,
+  h1:hover,
   .github-link:hover {
-    color: red;
+    color: white;
   }
 }
